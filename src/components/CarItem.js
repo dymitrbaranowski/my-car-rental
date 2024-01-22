@@ -13,7 +13,7 @@ const CarItem = ({
 }) => {
   return (
     <div>
-      <img src={img} alt={model} width="480" />
+      <img src={img ?? defaultImage} alt={model} width="480" />
       <h2>{make}</h2>
       <span>{model}</span>
       <span>{year}</span>
