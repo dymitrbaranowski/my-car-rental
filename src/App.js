@@ -5,11 +5,10 @@ import cars from './adverts.json';
 function App() {
   return (
     <div>
-      {/* <CarItemList items={cars} />
-      
-      */}
-      <Section title="Топ недели" />
-      <Section />
+      <Section title="Топ недели">
+        <CarItemList items={cars} />
+      </Section>
+      <Section title="Лучшее"></Section>
     </div>
   );
 }

@@ -1,5 +1,13 @@
-function Section({ title }) {
-  return <div>{title && <h2>{title}</h2>}</div>;
+import React from 'react';
+
+function Section({ title, children }) {
+  return (
+    <div>
+      {title && <h2>{title}</h2>}
+
+      {children}
+    </div>
+  );
 }
 
 export default Section;
